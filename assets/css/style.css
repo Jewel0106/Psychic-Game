@@ -1,0 +1,51 @@
+body{
+	background:black;
+	color:#ffffff;
+	text-align:center;
+}
+
+h1{
+font-size:50px;
+color:gold;
+margin:30px;
+}
+
+img{
+	width:500px;
+	height:auto;
+	margin:0 0 20px 0 ;
+
+}
+
+h2{
+	font-size:30px;
+	color:gold;
+}
+
+table{
+	width:390px;
+	margin:10px 0 0 380px;
+	text-align:left;
+	padding: 10px 0 10px 0;
+}
+
+td{
+	padding:5px 20px 5px 0;
+}
+
+.col1{
+	width:80px;
+}
+
+.col2{
+	width:270px;
+}
+
+h3{
+	font-size:20px;
+}
+
+p{
+	font-size:20px;
+	padding:0 15px 0 8px;
+}
