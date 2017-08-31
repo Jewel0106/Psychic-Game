@@ -19,23 +19,29 @@
     var psychicChoice = computerChoices[Math.floor(Math.random()
          * computerChoices.length)];
 
+   
+
     document.onkeyup = function(event) {
         var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
 
+      console.log(psychicChoice);
+      
         if (guessesMade.indexOf(userGuess) < 0 && computerChoices.indexOf(userGuess) >= 0) {
           guessesMade[guessesMade.length]=userGuess;
           guessesLeft--;
         }
 
-        if (psychicGuess == userGuess) {
+        if (userGuess ===psychicGuess) {
           wins++;
+            alert("Congratulations! You've read my mind...Play again.");
           guessesLeft = 10;
           guessesMade = [];
-          psychicGuess = alphabetLetters[Math.floor(Math.random() * alphabetLetters.length)];
+          psychicGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
          }
 
         if (guessesLeft == 0) {
           losses++;
+            alert("Sorry you couldn't read my mind...try again.");
           guessesLeft = 10;
           guessesMade = [];
           psychicGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
